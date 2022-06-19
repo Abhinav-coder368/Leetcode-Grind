@@ -12,3 +12,19 @@ public:
         return cnt;
     }
 };
+
+// Using Maps
+//  int numJewelsInStones(string jewels, string stones) {
+//         int n=jewels.size();
+//         int m=stones.size();
+//         map<char,int> mp;
+      
+//             for(int j=0;j<n;j++){
+//                 //
+//                 mp[jewels[j]]++;
+//             }
+//         int cnt=0;
+//             for(int j=0;j<m;j++)
+//                cnt+=mp[stones[j]];
+//         return cnt;
+//     }
