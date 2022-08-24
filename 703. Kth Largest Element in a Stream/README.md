@@ -17,12 +17,12 @@ Implement KthLargest class:
 
 <p><strong>Explaination:</strong></p>
 
-KthLargest kthLargest = new KthLargest(3, [4, 5, 8, 2]);
-kthLargest.add(3);   // return 4
-kthLargest.add(5);   // return 5
-kthLargest.add(10);  // return 5
-kthLargest.add(9);   // return 8
-kthLargest.add(4);   // return 8
+<p>KthLargest kthLargest = new KthLargest(3, [4, 5, 8, 2]);</p>
+<p>kthLargest.add(3);   // return 4</p>
+<p>kthLargest.add(5);   // return 5</p>
+<p>kthLargest.add(10);  // return 5</p>
+<p>kthLargest.add(9);   // return 8</p>
+<p>kthLargest.add(4);   // return 8</p>
 </pre>
 
 <p>&nbsp;</p>
