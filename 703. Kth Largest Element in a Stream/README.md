@@ -9,7 +9,7 @@ Implement KthLargest class:
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
-<pre><strong>Input:</strong>  Input
+<pre><strong>Input:</strong> 
 ["KthLargest", "add", "add", "add", "add", "add"]
 [[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]]
 <strong>Output:</strong> [null, 4, 5, 5, 8, 8]
