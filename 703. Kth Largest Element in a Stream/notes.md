@@ -1,0 +1,2 @@
+- **use min heap**
+- **because sorting takes O(nlogn) but minheap have O(k).**
