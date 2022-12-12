@@ -8,8 +8,10 @@ public:
                 cnt++;
                 if(cnt==1)
                   v.push_back(i);
-                if(cnt==ans)
+                if(cnt==ans){
                     v.push_back(i);
+                    break;
+                }
             }
         }
         if(cnt>=1) return v;
