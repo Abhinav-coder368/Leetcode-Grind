@@ -1,4 +1,5 @@
-class Solution {
+// https://www.youtube.com/watch?v=SPmBfO6ov5I
+Solution {
 public:
     vector<int> avoidFlood(vector<int>& rains) {
         int n = rains.size();
