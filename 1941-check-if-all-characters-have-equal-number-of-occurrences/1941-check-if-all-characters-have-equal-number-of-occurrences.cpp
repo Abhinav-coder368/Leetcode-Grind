@@ -1,16 +1,14 @@
 class Solution {
 public:
     bool areOccurrencesEqual(string s) {
-        map<char, int> mp;
-        set<int> st;
-        for(auto it : s){
-            mp[it]++;
-        }
+        unordered_map<char,int> mp;
+        for(int i=0;i<s.size();i++)
+            mp[s[i]]++;
+        int cnt= mp[s[0]];
         for(auto it : mp){
-            int x = it.second;
-            st.insert(x);
+            if(cnt!=it.second)
+                return false;
         }
-        if(st.size() == 1 ) return true;
-        return false;
+        return true;
     }
 };
