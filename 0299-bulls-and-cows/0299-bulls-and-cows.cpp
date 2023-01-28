@@ -23,7 +23,7 @@ public:
             if(mp2.find(secret[i]) != mp2.end()){
                 ans++;
                 mp2[secret[i]]--;
-                if(mp2[secret[i]]==0) mp2.erase(secret[i]);
+                if(mp2[secret[i]]==0) mp2.erase(secret[i]);  //freq == 0 hone ka matlab yeh nahi h ki element map se remove ho gaya h.......freq toh (-)ve bhi ja sakti h .....isley mp2[secret[i]] == 0(secret[i] ki freq 0 hojaye tb) hone pr us element ko map se erase kr do
             }
         }
         
