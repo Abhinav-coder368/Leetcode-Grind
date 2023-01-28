@@ -7,7 +7,11 @@ public:
             if(secret[i] == guess[i]){
                 A++;
                 secret.erase(secret.begin() + i);
-                guess.erase(guess.begin() + i);
+                guess.erase(guess.begin() + i);     // element ko erase karne pr dono string ka size kam ho raha tha isley i-- kiya ....
+                // for example: str = hello 
+                                   // 01234    //indexing        'e' was at position 1
+                // After deletion of h: ello
+                                   //   0123   // indexing  now 'e' is at position 0
                 i--;
             }
         }
