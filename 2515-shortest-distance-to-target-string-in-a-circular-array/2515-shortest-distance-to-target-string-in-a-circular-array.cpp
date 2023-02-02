@@ -31,8 +31,6 @@ public:
                 // backwardCount = j;
                 break;
             }
-            // if(j==0) 
-            //     j = n-1;
                      
         }
 
