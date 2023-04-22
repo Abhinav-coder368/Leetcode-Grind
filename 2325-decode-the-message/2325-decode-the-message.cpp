@@ -16,7 +16,6 @@ public:
             // for(auto it: mp){
                 char ele = message[i];
                 if(mp.find(ele)!=mp.end()){
-                    // index = i+1;
                     
                     s+= mp[ele];
                 }
