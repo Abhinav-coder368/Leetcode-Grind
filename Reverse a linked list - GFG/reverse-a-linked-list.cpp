@@ -47,6 +47,9 @@ class Solution
             prev = curr;
             curr = forward;
         }
+        /*prev ka kam hai ki kis node tk reverse ho haya hai uski last node jo abhi just reverse mei add hui hai
+        usko store karna.*/
+        /*forward ka kam sirf curr ko iterate karne k liye kar rahe h  */
         
         return prev;
     }
