@@ -11,13 +11,28 @@ class Solution
     vector<long long> nextLargerElement(vector<long long> arr, int n){
         // Your code here
         stack<long long> st;
-        vector<long long> vec(n,-1);
-        for(int i=0;i<n;i++){
-            while(!st.empty() and arr[i]>arr[st.top()]){
-                vec[st.top()] = arr[i];
+        vector<long long> vec(n);
+        // for(int i=0;i<n;i++){
+        //     while(!st.empty() and arr[i]>arr[st.top()]){
+        //         vec[st.top()] = arr[i];
+        //         st.pop();
+        //     }
+        //     st.push(i);
+        // }
+        // return vec;
+        
+        for(int i=n-1;i>=0;i--){
+            while(!st.empty() and st.top() <= arr[i]){
                 st.pop();
             }
-            st.push(i);
+            if(i<n){
+                if(!st.empty()){
+                    vec[i] = st.top();
+                }
+                else
+                   vec[i]  = -1;
+            }
+            st.push(arr[i]);
         }
         return vec;
        
