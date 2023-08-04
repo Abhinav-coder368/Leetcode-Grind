@@ -10,15 +10,16 @@ using namespace std;
 
 class Solution{
 public:
-    
     void Reverse(stack<int> &st){
-        
+        vector<int> res;
         while(!st.empty()){
-        int num = st.top();
-        cout<<num<<" ";
-        st.pop();
+            res.push_back(st.top());
+            st.pop();
         }
-        
+    //   reverse(res.begin(),res.end());
+       for(int i=0;i<res.size();i++){
+           st.push(res[i]);
+       }
     }
 };
 
