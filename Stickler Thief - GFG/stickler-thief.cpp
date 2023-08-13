@@ -6,19 +6,25 @@ typedef long long int ll;
 // } Driver Code Ends
 class Solution
 {
+
     public:
     //Function to find the maximum money the thief can get.
 
+   int f(int ind,int arr[], vector<int> &dp){
+        if(ind == 0) return arr[ind];
+        if(ind < 0) return 0;
+        if(dp[ind] != -1) return dp[ind];
+        
+        int pick = arr[ind] + f(ind-2,arr,dp);
+        int notpick = 0 + f(ind -1,arr,dp);
+        
+        return dp[ind] = max(pick,notpick);
+    }
+    
     int FindMaxSum(int arr[], int n)
     {
-     int prev = 0;
-        int curr = 0;
-        for(int i =0;i<n;i++){
-            int sum = prev + arr[i];
-            prev = curr;
-            curr = max(curr,sum);
-        }
-        return curr;
+      vector<int> dp(n,-1);
+      return f(n-1,arr,dp);
     }
 };
 
