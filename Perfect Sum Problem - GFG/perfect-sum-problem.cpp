@@ -10,7 +10,7 @@ class Solution{
 	int f(int ind, int sum,int nums[],vector<vector<int>> &dp){
 	   
 	   
-	   if(sum < 0 ) return 0;
+	   //if(sum < 0 ) return 0;
 	   if(ind<0){
 	       
 	       
